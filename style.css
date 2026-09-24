@@ -1,0 +1,74 @@
+/*Configuações Gerais*/
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Aria', sans-serif;
+    background-color: tan;
+    color:black;
+}
+/*Cabeçalho*/
+header {
+    font-family: 'Brush Script MT', sans-serif;
+    background-color:teal;
+    color:black;
+    padding: 25px;
+    text-align: center;
+}
+.logo h1{
+    font-size: 50px;
+}
+/*Menu de Navegação*/
+nav {
+    background-color: chocolate;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+.menu a {
+    color: bisque;
+    text-decoration: name;
+}
+.menu a:hoover {
+    color: bisque;
+}
+/*Conteúdo Principal*/
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*Banner*/
+.banner {
+    background-color: brown;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 30px;
+}
+.banener h2 {
+    margin-bottom: 15px;
+}
+/*Seção de Produtos:Banoffee*/
+.produtos {
+    text-align: center;
+    padding: 20px;
+}
+.produtos h2 {
+    margin-bottom: 30px;
+}
+/*div que organiza os produtos*/
+.lista-produtos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/*Cartão do Produto*/

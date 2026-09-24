@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <content="width=device-width, initial-scale=1.0">
+    <title>Site de Compras</title>
+</head>
+<body>
+    <header>
+    <!-- Cabeçalho do Site-->
+     <div class="logo">
+        <h1>Doceria G&G</h1>
+        <p>Produtos para você</p>
+        </div>
+    </header>
+    <!--Menu de Naveação-->
+    <nav>
+        <!--A tag <a> cria um link
+            href define o endereço para onde o usuário será direcionado
+            target="_blank" abre o link em uma nova aba
+            -->
+        <div class="menu">
+        <a href="#inicio"> Início</a>
+        <a href="#preodutos"> Produtos</a>
+        <a href="#sobre"> Sobre</a>
+        <a href="contato"> Contato</a>
+        </div>
+    </nav>
+
+    <!--Conteúdo Principal-->
+
+    <main>
+        <!--Seção Inicial-->
+        <section id="inicio">
+            <div class="banner">
+                <h2>Bem vindo a loja</h2>
+                <p>Confira nossos produtos</p>
+            </div>
+            </section>
+
+            <!--Seção de Produtos-->
+            <section id="banoffe">
+                <h2> Nossos produtos</h2>
+                <!--div com produtos-->
+                <div class="produtos">
+                    <!--Imagens do Produto-->
+                     <h3>Banoffee</h3>
+                    <p class="preco">
+                        R$15,00</p>
+                    <img
+                    src="https://i.panelinha.com.br/i1/bk-2492-banoffee-receita.webp"
+                    alt="Banoffee">
+                    <h3></h3>
+                        <!--Botão que abre o Modal-->
+                        <button>
+                            <class="botao"
+                            onclick="document.getElementByid ('modal-banoffee').style.display"='block'>
+                            comprar
+                        </button>
+                </div>
+            </section>
+            <section id="torta de limao">
+                <!--div com produtos-->
+                <div class="produtos">
+                    <!--Imagens do Produto-->
+                    <h3>Torta de Limão</h3>
+                    <p class="preco">
+                        R$15,00</p>
+                    <img
+                    src="https://images.aws.nestle.recipes/original/efde94328c90a3df9c569a57186862e0_19_torta_limao.png"
+                    alt="Torta de Limão">
+                    <h3></h3>
+                          <!--Botão que abre o Modal-->
+                        <button>
+                            <class="botao"
+                            onclick="document.getElementByid ('modal-banoffee').style.display"='block'>
+                            comprar
+                        </button>
+                </div>
+            </section>
+
+            <!--Sobre a Loja-->
+            <section id="sobre">
+                <div class="sobre">
+                    <h2>Sobre a loja</h2>
+                    <p>Somos uma loja especializada em tortas e doces refinados para sua festa. Essa loja foi fundada em 2020 como uma tentativa de se levantar durante a pandemia do Covid-19.</p>
+                </div>
+            </section>
+
+            <!--Seção de Contatos-->
+            <section id="contato">
+                <div class="contato">
+                <h2>Contatos</h2>
+                <p>Email: doceriageg@gmail.com</p>
+            </div>
+            </section>
+            </main>
+
+            <!--FOOTER sempre fora do main-->
+            <!--FOOTER (rodapé)-->
+            <footer>
+                <div class="rodape">
+                    <p>Desde 2020 - Doceria G&G</p>
+                </div>
+            </footer>
+</body>
+</html>
