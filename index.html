@@ -12,7 +12,7 @@
     <!-- Cabeçalho do Site-->
      <div class="logo">
         <h1>Doceria G&G</h1>
-        <p>Produtos para você</p>
+        <p>Os melhores doces para matar a sua vontade</p>
         </div>
     </header>
     <!--Menu de Naveação-->
@@ -41,7 +41,7 @@
             </section>
 
             <!--Seção de Produtos-->
-            <section id="banoffe">
+            <section id="produtos">
                 <h2> Nossos produtos</h2>
                 <!--div com produtos-->
                 <div class="produtos">
@@ -61,7 +61,7 @@
                         </button>
                 </div>
             </section>
-            <section id="torta de limao">
+            <section id="produtos">
                 <!--div com produtos-->
                 <div class="produtos">
                     <!--Imagens do Produto-->
@@ -75,7 +75,7 @@
                           <!--Botão que abre o Modal-->
                         <button>
                             <class="botao"
-                            onclick="document.getElementByid ('modal-banoffee').style.display"='block'>
+                            onclick="document.getElementByid ('modal-torta-de-limao').style.display"='block'>
                             comprar
                         </button>
                 </div>
@@ -95,6 +95,34 @@
                 <h2>Contatos</h2>
                 <p>Email: doceriageg@gmail.com</p>
             </div>
+            </section>
+            <!--Seção de Contatos (Formulário)-->
+            <section id="formulario">
+                <div class="formulario">
+                    <h2>Envie uma mensagem</h2>
+                    <form>
+                        <!-- Campo para o nome -->
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        <!-- Campo para o email -->
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                        <!-- Campo para o telefone -->
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu número de telefone" required>
+                        <!--Campo para escolher o assunto-->
+                        <laabel id="assunto">Assunto:</label>
+                        <select id="assunto" name="assunto">
+                            <option value="duvida">Dúvida</option>
+                            <option value="elogio">Elogio</option>
+                            <option value="reclamacao">Reclamação</option>
+                        </select>
+                        <!-- Campo para a mensagem -->
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Deixe sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
             </section>
             </main>
 
