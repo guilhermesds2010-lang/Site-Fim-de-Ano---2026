@@ -23,9 +23,9 @@
             -->
         <div class="menu">
         <a href="#inicio"> Início</a>
-        <a href="#preodutos"> Produtos</a>
+        <a href="#produtos"> Produtos</a>
         <a href="#sobre"> Sobre</a>
-        <a href="contato"> Contato</a>
+        <a href="#contato"> Contato</a>
         </div>
     </nav>
 
@@ -48,17 +48,12 @@
                     <!--Imagens do Produto-->
                      <h3>Banoffee</h3>
                     <p class="preco">
-                        R$15,00</p>
+                        R$ 12,00</p>
                     <img
                     src="https://i.panelinha.com.br/i1/bk-2492-banoffee-receita.webp"
                     alt="Banoffee">
-                    <h3></h3>
                         <!--Botão que abre o Modal-->
-                        <button>
-                            <class="botao"
-                            onclick="document.getElementByid ('modal-banoffee').style.display"='block'>
-                            comprar
-                        </button>
+                        <a href="#formulario" class="botao-brilho">comprar</a>
                 </div>
             </section>
             <section id="produtos">
@@ -67,17 +62,38 @@
                     <!--Imagens do Produto-->
                     <h3>Torta de Limão</h3>
                     <p class="preco">
-                        R$15,00</p>
+                        R$ 15,00</p>
                     <img
                     src="https://images.aws.nestle.recipes/original/efde94328c90a3df9c569a57186862e0_19_torta_limao.png"
                     alt="Torta de Limão">
-                    <h3></h3>
                           <!--Botão que abre o Modal-->
-                        <button>
-                            <class="botao"
-                            onclick="document.getElementByid ('modal-torta-de-limao').style.display"='block'>
-                            comprar
-                        </button>
+                        <a href="#formulario" class="botao-brilho">comprar</a>
+                </div>
+            </section>
+            <section id="produtos">
+                <!--div com produtos-->
+                <div class="produtos">
+                    <!--Imagens do Produto-->
+                    <h3>Torta de Maçã</h3>
+                    <p class="preco">
+                        R$ 18,00</p>
+                    <img
+                    src="https://monologosdoarroz.com.br/wp-content/uploads/2025/06/torta-de-maca-americana-blog-monologos-do-arroz.webp"
+                    alt="Torta de Maçã">
+                          <!--Botão que abre o Modal-->
+                        <a href="#formulario" class="botao-brilho">comprar</a>
+                </div>
+            </section>
+            <div class="produtos">
+                    <!--Imagens do Produto-->
+                    <h3>Torta Cookie</h3>
+                    <p class="preco">
+                        R$ 10,00</p>
+                    <img
+                    src="https://kicaldo.com.br/wp-content/uploads/2025/09/receita-torta-de-cookie-com-avela-kicaldo.jpg"
+                    alt="Torta Cookie">
+                          <!--Botão que abre o Modal-->
+                        <a href="#formulario" class="botao-brilho">comprar</a>
                 </div>
             </section>
 
@@ -85,7 +101,8 @@
             <section id="sobre">
                 <div class="sobre">
                     <h2>Sobre a loja</h2>
-                    <p>Somos uma loja especializada em tortas e doces refinados para sua festa. Essa loja foi fundada em 2020 como uma tentativa de se levantar durante a pandemia do Covid-19.</p>
+                    <p>Somos dois irmãos apaixonados por doces e pela arte de transformar ingredientes em momentos especiais. Nossa doceria nasceu da vontade de compartilhar sabores deliciosos, preparar doces com carinho e levar um pouco de felicidade para cada pessoa.</p>
+                    <p>Acreditamos que cada doce tem o poder de tornar momentos simples em lembranças inesquecíveis. Por isso, buscamos preparar cada receita com dedicação, capricho e muito amor.</p>
                 </div>
             </section>
 
@@ -93,13 +110,13 @@
             <section id="contato">
                 <div class="contato">
                 <h2>Contatos</h2>
-                <p>Email: doceriageg@gmail.com</p>
+                <p>Email: contatos@doceriageg.com</p>
             </div>
             </section>
             <!--Seção de Contatos (Formulário)-->
             <section id="formulario">
                 <div class="formulario">
-                    <h2>Envie uma mensagem</h2>
+                <h2>Cadastro</h2>
                     <form>
                         <!-- Campo para o nome -->
                         <label for="nome">Nome:</label>
@@ -111,7 +128,7 @@
                         <label for="telefone">Telefone:</label>
                         <input type="tel" id="telefone" name="telefone" placeholder="Digite seu número de telefone" required>
                         <!--Campo para escolher o assunto-->
-                        <laabel id="assunto">Assunto:</label>
+                        <label id="assunto">Assunto:</label>
                         <select id="assunto" name="assunto">
                             <option value="duvida">Dúvida</option>
                             <option value="elogio">Elogio</option>

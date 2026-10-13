@@ -7,16 +7,18 @@
 
 body {
     font-family: 'Aria', sans-serif;
-    background-color: tan;
-    color:black;
+    background-color: rgb(179, 137, 82);
+    color:bisque;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 /*Cabeçalho*/
 header {
     font-family: 'Brush Script MT', sans-serif;
-    background-color:teal;
-    color:black;
+    background-color: rgb(104, 50, 11);
+    color: goldenrod;
     padding: 25px;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .logo h1{
     font-size: 50px;
@@ -26,13 +28,14 @@ header {
 }
 /*Menu de Navegação*/
 nav {
-    background-color: chocolate;
+    background-color: rgb(126, 75, 39);
 }
 .menu {
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 .menu a {
     color: bisque;
@@ -51,7 +54,7 @@ main {
 
 /*Banner*/
 .banner {
-    background-color: brown;
+    background-color: rgb(88, 43, 0);
     text-align: center;
     padding: 60px 20px;
     margin-bottom: 30px;
@@ -85,11 +88,12 @@ main {
     width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
 }
 /*imagem do produto*/
 .produtos img {
     width: 100%;
-    height: auto;
+    height: 500px;
     border-radius: 5px;
 }
 /*nome do produto*/
@@ -103,7 +107,7 @@ main {
     margin-bottom: 15px;
 }
 /*botão de compra*/
-.botão-comprar {
+/*.botão-comprar {
     background-color: chocolate;
     color: bisque;
     padding: 10px 20px;
@@ -111,33 +115,40 @@ main {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+}*/
 /*Efeito de hover no botão de compra*/
-.botão-comprar:hover {
+/*.botão-comprar:hover {
     background-color: darkorange;
-}
+}*/
 /*seção de sobre*/
 .sobre {
-    background-color: peru;
+    background-color: rgb(155, 95, 35);
     padding: 40px 20px;
     text-align: center;
 }
 .sobre h2 {
     margin-bottom: 15px;
 }
+.sobre p {
+    max-width: 800px;
+    margin: 0 auto 15px;
+    line-height: 1.6;
+}
 /*seção de contato*/
 .contato {
-    background-color: chocolate;
+    background-color: rgb(117, 72, 27);
     padding: 40px 20px;
     margin-top: 30px;
     text-align: center;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .contato h2 {
     margin-bottom: 15px;
 }
 /*Rodapé*/
 footer {
-    background-color: teal;
+    background-color: goldenrod;
     color: black;
     text-align: center;
     padding: 15px;
@@ -192,19 +203,22 @@ footer {
     margin-bottom: 30px;
 }
 /*Formulário de contato*/
-#contato form {
+#formulario form {
     max-width: 600px;
     margin: auto;
 }
+.formulario h2 {
+    margin-bottom: 30px;
+}
 /*Textos dos campos do formulário*/
-#contato label {
+#formulario label {
     display: block;
     margin-bottom: 5px;
     text-align: left;
 }
 /*Campos de texto*/
-#contato input,
-#contato textarea{
+#formulario input,
+#formulario textarea{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -212,14 +226,14 @@ footer {
     font-size: 16px;
 }
 /*Área da mensagem*/
-#contato textarea {
+#formulario textarea {
     resize: vertical;
 }
 /*Botão*/
-#contato button {
+#formulario button {
     width: 100%;
     margin-top: 20px;
-    background-color: chocolate;
+    background-color: darkgoldenrod;
     color: bisque;
     padding: 10px 20px;
     border: none;
@@ -227,4 +241,33 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 18px;
+}
+/*Botão de Brilho*/
+.botao-brilho {
+    background-color: rgb(160, 109, 0);
+    color: bisque;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.botao-brilho:hover {
+    background-color: goldenrod;
+    box-shadow: 0 0 10px rgb(233, 181, 51);
+    transform: scale(1.05);
+    border: 2px solid rgb(255, 192, 20);
+}
+.botao-brilho::selection {
+    background: none;
+}
+.formulario button:hover {
+    background-color: goldenrod;
+    box-shadow: 0 0 10px rgb(233, 181, 51);
+    transform: scale(1.05);
+    border: 2px solid rgb(255, 192, 20);
 }
