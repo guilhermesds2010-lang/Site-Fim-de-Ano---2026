@@ -14,21 +14,30 @@ body {
 /*Cabeçalho*/
 header {
     font-family: 'Brush Script MT', sans-serif;
-    background-color: rgb(104, 50, 11);
+    background: repeating-linear-gradient(90deg, rgb(88, 43, 0) 0px, rgb(88, 43, 0) 30px, rgb(104, 50, 11) 30px, rgb(104, 50, 11) 60px);
     color: goldenrod;
     padding: 25px;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
 }
 .logo h1{
     font-size: 50px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 .logo p {
     font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 /*Menu de Navegação*/
 nav {
-    background-color: rgb(126, 75, 39);
+    background-color: rgb(104, 50, 11);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.339);
+    position: sticky;
+    top: 135.8px;
+    border: 1px solid darkgoldenrod;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 .menu {
     display: flex;
@@ -54,12 +63,14 @@ main {
 
 /*Banner*/
 .banner {
-    background-color: rgb(88, 43, 0);
+    background-color: rgb(126, 75, 39);
     text-align: center;
     padding: 60px 20px;
     margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.339);
+    border: 1px solid rgb(88, 43, 0);
 }
-.banener h2 {
+.banner h2 {
     margin-bottom: 15px;
 }
 /*Seção de Produtos*/
@@ -87,7 +98,7 @@ main {
     padding: 15px;
     width: 800px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.339);
     margin-bottom: 20px;
 }
 /*imagem do produto*/
@@ -125,6 +136,8 @@ main {
     background-color: rgb(155, 95, 35);
     padding: 40px 20px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.339);
+    border: 1px solid rgb(88, 43, 0);
 }
 .sobre h2 {
     margin-bottom: 15px;
@@ -138,21 +151,24 @@ main {
 .contato {
     background-color: rgb(117, 72, 27);
     padding: 40px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.339);
     margin-top: 30px;
     text-align: center;
-    text-align: center;
     margin-bottom: 20px;
+    border: 1px solid rgb(88, 43, 0);
 }
 .contato h2 {
     margin-bottom: 15px;
 }
 /*Rodapé*/
 footer {
-    background-color: goldenrod;
+    background-color: rgb(104, 50, 11);
     color: black;
     text-align: center;
     padding: 15px;
     margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.339);
+    border: 1px solid rgb(88, 43, 0);
 }
 /*Estilos do Modal*/
 .modal {
@@ -215,15 +231,24 @@ footer {
     display: block;
     margin-bottom: 5px;
     text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 /*Campos de texto*/
 #formulario input,
 #formulario textarea{
     width: 100%;
-    padding: 12px;
+    padding: 2px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
+}
+#formulario select {
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
 }
 /*Área da mensagem*/
 #formulario textarea {
