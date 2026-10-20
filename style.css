@@ -8,6 +8,9 @@
 body {
     font-family: 'Aria', sans-serif;
     background-color: rgb(179, 137, 82);
+    background-image: url(fundo-doceria.png);
+    background-repeat: repeat;
+    background-size: 500px;
     color:bisque;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -35,7 +38,7 @@ nav {
     background-color: rgb(104, 50, 11);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.339);
     position: sticky;
-    top: 135.8px;
+    top: 134px;
     border: 1px solid darkgoldenrod;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -81,6 +84,7 @@ main {
 #produtos h2 {
     text-align: center;
     margin-bottom: 30px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.339);
 }
 /*div que organiza os produtos*/
 .lista-produtos {
@@ -104,8 +108,11 @@ main {
 /*imagem do produto*/
 .produtos img {
     width: 100%;
-    height: 500px;
+    aspect-ratio: 8/5;
+    object-fit: cover;
+    display: block;
     border-radius: 5px;
+    margin-bottom: 13px;
 }
 /*nome do produto*/
 .produtos h3 {
